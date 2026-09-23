@@ -1123,8 +1123,8 @@
 </ul>
 <h2 id="ogrenme-hedefleri">❔ Öğrenme hedefleri<a class="headerlink" href="#ogrenme-hedefleri" title="Permanent link">&para;</a></h2>
 <p><strong>Dersin genel amacı</strong></p>
-<p>Bu ders, bir problemi çözülebilir adımlara ayırmayı ve bu adımları önce akış şeması, sonra blok tabanlı
-bir ortam, en sonunda da metin tabanlı bir programlama dili ile ifade etmeyi öğretir. Amaç belirli bir
+<p>Bu ders, bir problemi çözülebilir adımlara ayırmayı ve bu adımları önce akış şeması ve sözde kodla,
+ardından metin tabanlı bir programlama dili olan Python ile ifade etmeyi öğretir. Amaç belirli bir
 dilin söz dizimini ezberlemek değil; hangi dili kullanırsanız kullanın işe yarayacak bir <strong>problem çözme
 alışkanlığı</strong> kazanmaktır.</p>
 <p>Ders sonunda öğrenci:</p>
@@ -1137,7 +1137,7 @@ alışkanlığı</strong> kazanmaktır.</p>
 <li>Karar yapıları, döngüler ve fonksiyonlarla program yazar</li>
 <li>Temel arama ve sıralama algoritmalarını uygular ve karşılaştırır</li>
 <li>Aynı probleme farklı algoritmalar önerip uygun olanı gerekçesiyle seçer</li>
-<li>Hem blok tabanlı (Scratch) hem metin tabanlı (Python) ortamda çalışır</li>
+<li>Algoritmalarını Python'da yazar ve pytest ile test eder</li>
 </ul>
 <h2 id="nereden-baslamal">🔥 Nereden başlamalı?<a class="headerlink" href="#nereden-baslamal" title="Permanent link">&para;</a></h2>
 <p>Materyali ham markdown olarak okumak yerine <strong><a href="https://aligunesgit.github.io/AlgoritmaTasarimi/">GitHub Pages
@@ -1147,11 +1147,10 @@ içerik orada gezinme, arama ve diyagramlarla birlikte gösterilir.</p>
 kurulumları yapın. Ardından <a href="https://aligunesgit.github.io/AlgoritmaTasarimi/pages/timeplan/">Zaman Planı</a>
 sayfasını hafta hafta takip edin.</p>
 <h2 id="dersin-duzeni">📂 Dersin düzeni<a class="headerlink" href="#dersin-duzeni" title="Permanent link">&para;</a></h2>
-<p>Her modülde aynı problem üç biçimde ele alınır:</p>
+<p>Her modülde aynı problem iki biçimde ele alınır:</p>
 <pre class="mermaid"><code>flowchart LR
     A["Problem"] --&gt; B["Akış şeması"]
-    B --&gt; C["Blok tabanlı&lt;br&gt;(Scratch)"]
-    C --&gt; D["Metin tabanlı&lt;br&gt;(Python)"]</code></pre>
+    B --&gt; C["Python"]</code></pre>
 <table>
 <thead>
 <tr>
@@ -1246,12 +1245,10 @@ listesi için <a href="pages/before/">Giriş sayfasındaki kurulum bölümüne</
 <p><em>Eklenecek.</em></p>
 <h2 id="kaynaklar">📓 Kaynaklar<a class="headerlink" href="#kaynaklar" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://cs50.harvard.edu/x/">CS50x</a>. Harvard'ın, Scratch ile başlayıp metin tabanlı dillere geçen
-  ücretsiz giriş dersi.</li>
+<li><a href="https://cs50.harvard.edu/python/">CS50P</a>. Harvard'ın Python ile programlamaya giriş dersi (ücretsiz).</li>
 <li><a href="https://allendowney.github.io/ThinkPython/">Think Python, 3. baskı</a>. Allen B. Downey'in ücretsiz
   çevrimiçi okunabilen Python kitabı.</li>
 <li><a href="https://pythontutor.com/">Python Tutor</a>. Python kodunu adım adım çalıştırıp değişkenleri görselleştirir.</li>
-<li><a href="https://scratch.mit.edu/">Scratch</a>. MIT'nin blok tabanlı programlama ortamı.</li>
 <li><a href="https://visualgo.net/">VisuAlgo</a>. Arama ve sıralama algoritmalarının animasyonları.</li>
 </ul>
 
@@ -1276,7 +1273,7 @@ listesi için <a href="pages/before/">Giriş sayfasındaki kurulum bölümüne</
     <span class="md-icon" title="Son Güncelleme">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="23 Eylül 2026 22:13:12">23 Eylül 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="23 Eylül 2026 22:28:25">23 Eylül 2026</span>
   </span>
 
     
@@ -1369,12 +1366,6 @@ listesi için <a href="pages/before/">Giriş sayfasındaki kurulum bölümüne</
     
     
       <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.7.1/build/scratchblocks.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.7.1/build/translations-all.js"></script>
-      
-        <script src="javascripts/scratchblocks-init.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

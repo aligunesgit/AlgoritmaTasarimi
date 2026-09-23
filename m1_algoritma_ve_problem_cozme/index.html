@@ -481,22 +481,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-ilk-program-scratch-ve-python-ile-selamlama" class="md-nav__link">
+  <a href="#6-ilk-program" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. İlk program: Scratch ve Python ile selamlama
+        6. İlk program: selamlama
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="6. İlk program: Scratch ve Python ile selamlama">
+    <nav class="md-nav" aria-label="6. İlk program: selamlama">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#61-scratch" class="md-nav__link">
+  <a href="#61-aks-semas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.1 Scratch
+        6.1 Akış şeması
       
     </span>
   </a>
@@ -1157,22 +1157,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-ilk-program-scratch-ve-python-ile-selamlama" class="md-nav__link">
+  <a href="#6-ilk-program" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. İlk program: Scratch ve Python ile selamlama
+        6. İlk program: selamlama
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="6. İlk program: Scratch ve Python ile selamlama">
+    <nav class="md-nav" aria-label="6. İlk program: selamlama">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#61-scratch" class="md-nav__link">
+  <a href="#61-aks-semas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.1 Scratch
+        6.1 Akış şeması
       
     </span>
   </a>
@@ -1283,7 +1283,7 @@
 <li>İyi bir algoritmanın beş temel özelliğini sıralar ve bir algoritmayı bu özelliklere göre değerlendirir</li>
 <li>Derleyici ile yorumlayıcı arasındaki farkı açıklar</li>
 <li>Blok tabanlı ve metin tabanlı programlama ortamlarını karşılaştırır</li>
-<li>Aynı "selamlama" programını hem Scratch'te hem Python'da yazıp çalıştırır</li>
+<li>Basit bir "selamlama" programının akış şemasını çizer, Python'da yazıp çalıştırır ve test eder</li>
 </ul>
 <hr />
 <h2 id="1-algoritma-nedir">1. Algoritma nedir?<a class="headerlink" href="#1-algoritma-nedir" title="Permanent link">&para;</a></h2>
@@ -1325,7 +1325,7 @@ bir <strong>arama</strong> (M10) adımıdır.</p>
 <p class="admonition-title">Algoritma ≠ program</p>
 <p>Algoritma, bir çözümün <strong>fikridir</strong>; hangi dille ifade edildiğinden bağımsızdır. Program ise o
 fikrin belirli bir programlama dilinde yazılmış, bilgisayarın çalıştırabileceği hâlidir. Aynı
-algoritma Türkçe cümlelerle, akış şemasıyla, Scratch bloklarıyla ya da Python koduyla ifade
+algoritma Türkçe cümlelerle, sözde kodla, akış şemasıyla ya da Python koduyla ifade
 edilebilir. Bu derste her algoritmayı bu biçimlerin birkaçıyla birden yazacağız.</p>
 </div>
 <h2 id="2-problem-cozme-sureci">2. Problem çözme süreci<a class="headerlink" href="#2-problem-cozme-sureci" title="Permanent link">&para;</a></h2>
@@ -1359,7 +1359,7 @@ geçerlidir:</p>
 <tr>
 <td><strong>3. Planı uygula</strong></td>
 <td>Her adımı doğru ifade ettim mi?</td>
-<td>Scratch ve Python ile kodlama</td>
+<td>Python ile kodlama</td>
 </tr>
 <tr>
 <td><strong>4. Geriye bak</strong></td>
@@ -1381,7 +1381,7 @@ eksik anlaşılmasından kaynaklanır. Bu yüzden geri dönüş 3. adıma değil
 <li>Sonucu göster.</li>
 </ol>
 </li>
-<li><strong>Uygula.</strong> Aynı adımları Python'da yazarız (bkz. <a href="#6-ilk-program-scratch-ve-python-ile-selamlama">§6</a>
+<li><strong>Uygula.</strong> Aynı adımları Python'da yazarız (bkz. <a href="#6-ilk-program">§6</a>
    ve <code>exercise_files/ortalama.py</code>).</li>
 <li><strong>Geriye bak.</strong> <code>4</code> ve <code>6</code> için <code>5</code> bekleriz. Peki <code>3</code> ve <code>4</code> için? Sonuç <code>3.5</code> olmalı; programımız
    tam sayı bölmesi yapıyorsa <code>3</code> verir ve bu bir hatadır. Bu tür ince noktaları M6'da operatörleri
@@ -1455,7 +1455,7 @@ komutları anlar. İnsanların bu dilde program yazması son derece zordur. Bu y
 dönüştürmesine izin veririz.</p>
 <pre class="mermaid"><code>flowchart LR
     P["Problem"] --&gt; A["Algoritma&lt;br&gt;(sözde kod, akış şeması)"]
-    A --&gt; K["Kaynak kod&lt;br&gt;(Python, C, Scratch...)"]
+    A --&gt; K["Kaynak kod&lt;br&gt;(Python, C, Java...)"]
     K --&gt; T["Çevirici&lt;br&gt;(derleyici / yorumlayıcı)"]
     T --&gt; M["Makine kodu"]
     M --&gt; S["Çalıştırma ve sonuç"]</code></pre>
@@ -1492,7 +1492,7 @@ dönüştürmesine izin veririz.</p>
 <tr>
 <td><strong>Örnek diller</strong></td>
 <td>C, C++, Go, Rust</td>
-<td>Python, JavaScript, Scratch</td>
+<td>Python, JavaScript, Ruby</td>
 </tr>
 </tbody>
 </table>
@@ -1552,10 +1552,11 @@ Profesyonel yazılımların neredeyse tamamı bu şekilde geliştirilir.</p>
 </tr>
 </tbody>
 </table>
-<p>Bu iki grup birbirinin rakibi değildir; aynı fikrin iki farklı gösterimidir. Scratch'teki bir
-"<code>10 defa tekrarla</code>" bloğu ile Python'daki <code>for i in range(10):</code> satırı aynı algoritmik fikri (tekrar)
-ifade eder. Bu derste her yeni kavramı önce blokla, ardından metinle göreceğiz. Amaç, kavramı dilden
-bağımsız olarak kavramanız.</p>
+<p>Bu iki grup birbirinin rakibi değildir; aynı fikrin iki farklı gösterimidir. Blok tabanlı bir
+ortamdaki "<code>10 defa tekrarla</code>" bloğu ile Python'daki <code>for i in range(10):</code> satırı aynı algoritmik
+fikri (tekrar) ifade eder. Blok tabanlı ortamlar daha çok okul öncesi ve ortaokul düzeyinde kullanılır.
+Bu derste doğrudan metin tabanlı bir dil olan Python ile çalışacağız. Algoritmanın mantığını ise önce
+akış şeması ve sözde kodla, dilden bağımsız olarak kuracağız.</p>
 <h3 id="bu-derste-kullanacagmz-ortamlar">Bu derste kullanacağımız ortamlar<a class="headerlink" href="#bu-derste-kullanacagmz-ortamlar" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -1567,12 +1568,6 @@ bağımsız olarak kavramanız.</p>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="https://scratch.mit.edu/">Scratch</a></td>
-<td>Blok tabanlı</td>
-<td>Tarayıcıda (kurulum gerekmez) veya masaüstü uygulaması</td>
-<td>Kavramların ilk tanıtımı</td>
-</tr>
 <tr>
 <td><a href="https://www.python.org/">Python</a> + <a href="https://code.visualstudio.com/">VS Code</a></td>
 <td>Metin tabanlı</td>
@@ -1588,7 +1583,7 @@ bağımsız olarak kavramanız.</p>
 </tbody>
 </table>
 <p>Kurulum adımları <a href="../pages/before/#kurulum">Giriş sayfasındadır</a>.</p>
-<h2 id="6-ilk-program-scratch-ve-python-ile-selamlama">6. İlk program: Scratch ve Python ile selamlama<a class="headerlink" href="#6-ilk-program-scratch-ve-python-ile-selamlama" title="Permanent link">&para;</a></h2>
+<h2 id="6-ilk-program">6. İlk program: selamlama<a class="headerlink" href="#6-ilk-program" title="Permanent link">&para;</a></h2>
 <p>Kullanıcıya adını soran ve onu adıyla selamlayan küçük bir program yazalım. Önce algoritmayı yazıyoruz:</p>
 <ol>
 <li>Kullanıcıya adını sor.</li>
@@ -1596,52 +1591,14 @@ bağımsız olarak kavramanız.</p>
 <li>"Merhaba, " ifadesini cevapla birleştir.</li>
 <li>Oluşan cümleyi göster.</li>
 </ol>
-<h3 id="61-scratch">6.1 Scratch<a class="headerlink" href="#61-scratch" title="Permanent link">&para;</a></h3>
-<p><a href="https://scratch.mit.edu/">scratch.mit.edu</a> adresine gidip <strong>Oluştur</strong>'a tıklayın. Arayüz dilini sol
-üstteki dünya simgesinden <strong>Türkçe</strong> yapabilirsiniz. Ardından aşağıdaki blokları kod alanına sürükleyin:</p>
-<pre class="blocks">
-yeşil bayrak tıklandığında
-[Adın ne?] diye sor ve bekle
-([Merhaba, ] i ve (yanıt) ile birleştir) de
-</pre>
-
-<table>
-<thead>
-<tr>
-<th>Blok</th>
-<th>Kategori</th>
-<th>Algoritmadaki adımı</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>yeşil bayrak tıklandığında</code></td>
-<td>Olaylar</td>
-<td>Programın başlangıcı</td>
-</tr>
-<tr>
-<td><code>... diye sor ve bekle</code></td>
-<td>Algılama</td>
-<td>Adım 1 ve 2: sor, cevabı al</td>
-</tr>
-<tr>
-<td><code>yanıt</code></td>
-<td>Algılama</td>
-<td>Kullanıcının verdiği cevap</td>
-</tr>
-<tr>
-<td><code>... i ve ... ile birleştir</code></td>
-<td>Operatörler</td>
-<td>Adım 3: iki metni birleştir</td>
-</tr>
-<tr>
-<td><code>... de</code></td>
-<td>Görünüm</td>
-<td>Adım 4: sonucu göster</td>
-</tr>
-</tbody>
-</table>
-<p>Yeşil bayrağa tıklayın, adınızı yazıp Enter'a basın. Kukla sizi selamlayacaktır.</p>
+<h3 id="61-aks-semas">6.1 Akış şeması<a class="headerlink" href="#61-aks-semas" title="Permanent link">&para;</a></h3>
+<p>Aynı adımların akış şeması aşağıdadır. Sembollerin anlamlarını M3'te ayrıntılı işleyeceğiz. Şimdilik
+şu kadarı yeterli: oval başlangıç ve bitişi, paralelkenar giriş/çıkışı, dikdörtgen işlemi gösterir.</p>
+<pre class="mermaid"><code>flowchart TD
+    A(["Başla"]) --&gt; B[/"Kullanıcıdan adını al: ad"/]
+    B --&gt; C["cümle = Merhaba, + ad"]
+    C --&gt; D[/"cümle ekrana yaz"/]
+    D --&gt; E(["Bitir"])</code></pre>
 <h3 id="62-python">6.2 Python<a class="headerlink" href="#62-python" title="Permanent link">&para;</a></h3>
 <p>Aynı algoritma Python'da şöyle yazılır (<code>exercise_files/merhaba.py</code>):</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">selamla</span><span class="p">(</span><span class="n">ad</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
@@ -1654,10 +1611,10 @@ yeşil bayrak tıklandığında
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">selamla</span><span class="p">(</span><span class="n">kullanici</span><span class="p">))</span>  <span class="c1"># (2)!</span>
 </span></code></pre></div>
 <ol>
-<li>Adım 1 ve 2: <code>input()</code> kullanıcıya soruyu gösterir ve cevabı bir metin olarak döndürür. Scratch'teki
-   <code>diye sor ve bekle</code> + <code>yanıt</code> bloklarının karşılığıdır.</li>
-<li>Adım 3 ve 4: <code>selamla()</code> metinleri birleştirir, <code>print()</code> sonucu ekrana yazar. Scratch'teki
-   <code>birleştir</code> + <code>de</code> bloklarının karşılığıdır.</li>
+<li>Adım 1 ve 2: <code>input()</code> kullanıcıya soruyu gösterir ve cevabı bir metin olarak döndürür. Akış
+   şemasındaki ilk giriş kutusunun karşılığıdır.</li>
+<li>Adım 3 ve 4: <code>selamla()</code> metinleri birleştirir, <code>print()</code> sonucu ekrana yazar. Akış şemasındaki
+   işlem ve çıkış kutularının karşılığıdır.</li>
 </ol>
 <p>Çalıştırmak için repo klasöründe:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>m1_algoritma_ve_problem_cozme/exercise_files/merhaba.py
@@ -1685,8 +1642,9 @@ olduğunu gösterir. Bu, Pólya'nın 4. adımının ("geriye bak") otomatikleşt
    algoritmanızı <a href="#3-iyi-bir-algoritmanin-ozellikleri">§3</a>'teki beş özelliğe göre değerlendirin.</li>
 <li><strong>Belirsizliği gider.</strong> "Makarnayı pişene kadar kaynat" adımını, bir robotun uygulayabileceği kadar
    belirli hâle getirin.</li>
-<li><strong>Scratch selamlama.</strong> §6.1'deki programı yazın. Sonra kuklanın selamdan sonra 2 saniye bekleyip
-   "Bugün nasılsın?" diye sormasını sağlayın. İpucu: <code>saniye bekle</code> bloğu Kontrol kategorisindedir.</li>
+<li><strong>Akış şemasını genişlet.</strong> §6.1'deki akış şemasını, program selamdan sonra kullanıcıya
+   "Bugün nasılsın?" diye sorup cevabı <code>"Anladım, &lt;cevap&gt;."</code> biçiminde ekrana yazacak şekilde
+   genişletin. Kâğıt üzerinde çizmeniz yeterli.</li>
 <li><strong>Python selamlama.</strong> <code>merhaba.py</code> dosyasını çalıştırın. Ardından <code>selamla</code> fonksiyonunu,
    <code>"Merhaba, Ayşe! Algoritma Tasarımı dersine hoş geldin."</code> çıktısını verecek şekilde değiştirin ve
    <code>test_merhaba.py</code> dosyasını yeni çıktıya göre güncelleyin.</li>
@@ -1700,12 +1658,12 @@ olduğunu gösterir. Bu, Pólya'nın 4. adımının ("geriye bak") otomatikleşt
 Program ise bu adımların bilgisayarın çalıştırabileceği bir dilde yazılmış hâlidir. İyi bir çözüm,
 klavyeden önce gelir: problemi anlamak, plan yapmak, uygulamak ve geriye bakmak. Programlama dilleri
 blok tabanlı ve metin tabanlı olarak iki gruba ayrılabilir, ancak ikisi de aynı algoritmik fikirleri
-ifade eder. Bu yüzden derste her kavramı önce Scratch'te, sonra Python'da göreceğiz. Bir sonraki
+ifade eder. Bu derste her kavramı önce akış şemasıyla, sonra Python'da göreceğiz. Bir sonraki
 modülde, bir problemi algoritmaya dönüştürmek için kullanabileceğimiz sistematik tekniklere geçiyoruz.</p>
 <h2 id="ileri-okuma">İleri okuma<a class="headerlink" href="#ileri-okuma" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://cs50.harvard.edu/x/weeks/0/">CS50x, Hafta 0: Scratch</a>. Harvard'ın giriş dersinin ilk
-  haftası. Algoritma kavramını ve Scratch'i bu modüle çok benzer bir yaklaşımla anlatır.</li>
+<li><a href="https://cs50.harvard.edu/python/weeks/0/">CS50P, Hafta 0: Functions, Variables</a>. Harvard'ın
+  Python ile programlamaya giriş dersinin ilk haftası. <code>input()</code>, <code>print()</code> ve ilk fonksiyonları anlatır.</li>
 <li>Allen B. Downey, <a href="https://allendowney.github.io/ThinkPython/chap01.html"><em>Think Python</em>, 3. baskı, 1. bölüm</a>.
   Programlamanın ne olduğuna ve Python'la ilk adımlara ücretsiz bir giriş.</li>
 </ul>
@@ -1717,7 +1675,6 @@ modülde, bir problemi algoritmaya dönüştürmek için kullanabileceğimiz sis
   Addison-Wesley, 1997, §1.1. §3'teki beş algoritma özelliğinin kaynağı.</li>
 <li><a href="https://docs.python.org/3/glossary.html#term-bytecode">Python belgeleri: Glossary, "bytecode"</a>.
   §4'teki CPython notunun kaynağı.</li>
-<li><a href="https://scratch.mit.edu/">Scratch</a>, MIT Media Lab. §6.1'deki blokların kaynağı.</li>
 </ul>
 
 
@@ -1741,7 +1698,7 @@ modülde, bir problemi algoritmaya dönüştürmek için kullanabileceğimiz sis
     <span class="md-icon" title="Son Güncelleme">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="23 Eylül 2026 22:13:12">23 Eylül 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="23 Eylül 2026 22:28:25">23 Eylül 2026</span>
   </span>
 
     
@@ -1850,12 +1807,6 @@ modülde, bir problemi algoritmaya dönüştürmek için kullanabileceğimiz sis
     
     
       <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.7.1/build/scratchblocks.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.7.1/build/translations-all.js"></script>
-      
-        <script src="../javascripts/scratchblocks-init.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
