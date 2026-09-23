@@ -82,11 +82,6 @@ plugins:
       fallback_to_build_date: true
       locale: tr
 
-extra_javascript:
-  - https://cdn.jsdelivr.net/npm/scratchblocks@3.7.1/build/scratchblocks.min.js
-  - https://cdn.jsdelivr.net/npm/scratchblocks@3.7.1/build/translations-all.js
-  - javascripts/scratchblocks-init.js
-
 nav:
   - Ana Sayfa: README.md
   - Giriş: pages/before.md

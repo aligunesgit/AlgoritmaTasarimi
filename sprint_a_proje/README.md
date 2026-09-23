@@ -14,7 +14,6 @@ diyagramı, giriş/çıkış, veri tipleri, operatörler, karar yapıları) tek 
 * Problemin tanımı ve girdi/çıktı listesi
 * Sözde kod
 * Akış diyagramı (draw.io, Mermaid veya Flowgorithm)
-* Scratch sürümü (proje linki)
 * Python sürümü ve en az üç test durumu
 
 ## 📋 Değerlendirme

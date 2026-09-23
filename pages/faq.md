@@ -3,11 +3,11 @@
 ??? question "Daha önce hiç programlama yapmadım. Bu dersi alabilir miyim?"
 
     Evet. Dersin ön koşulu yoktur ve ilk haftalar programlama bilgisi gerektirmez: önce akış
-    şemaları ve blok tabanlı programlama ile başlıyoruz.
+    şemaları ve sözde kod ile başlıyoruz, Python'a adım adım geçiyoruz.
 
-??? question "Neden hem Scratch hem Python kullanıyoruz?"
+??? question "Neden hem akış şeması hem Python kullanıyoruz?"
 
-    Scratch, söz dizimi hatalarıyla uğraşmadan algoritmanın mantığına odaklanmanızı sağlar. Python
+    Akış şeması, söz dizimi hatalarıyla uğraşmadan algoritmanın mantığına odaklanmanızı sağlar. Python
     ise aynı mantığı gerçek bir programlama dilinde yazmayı öğretir. İkisini yan yana görmek, bir
     algoritmanın dilden bağımsız olduğunu anlamanın en kolay yoludur.
 

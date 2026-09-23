@@ -20,7 +20,7 @@ Bu modülün sonunda öğrenci:
 ## 📚 İçerik
 
 1. Fonksiyon nedir? Neden kullanılır?
-2. Scratch'te özel bloklar
+2. Akış şemasında alt program (predefined process) sembolü
 3. Python'da fonksiyon tanımlama (def)
 4. Parametreler ve dönüş değeri
 5. Kapsam (scope)
@@ -29,7 +29,7 @@ Bu modülün sonunda öğrenci:
 ## 🧪 Alıştırmalar
 
 Bu modülün alıştırma dosyaları `exercise_files/` klasöründedir. Her alıştırma aynı problemi
-üç biçimde ele alır: **akış şeması → blok tabanlı (Scratch) → metin tabanlı (Python)**.
+iki biçimde ele alır: **akış şeması → Python**.
 
 ## 📖 İleri okuma
 

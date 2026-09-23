@@ -29,8 +29,8 @@
 
 **Dersin genel amacı**
 
-Bu ders, bir problemi çözülebilir adımlara ayırmayı ve bu adımları önce akış şeması, sonra blok tabanlı
-bir ortam, en sonunda da metin tabanlı bir programlama dili ile ifade etmeyi öğretir. Amaç belirli bir
+Bu ders, bir problemi çözülebilir adımlara ayırmayı ve bu adımları önce akış şeması ve sözde kodla,
+ardından metin tabanlı bir programlama dili olan Python ile ifade etmeyi öğretir. Amaç belirli bir
 dilin söz dizimini ezberlemek değil; hangi dili kullanırsanız kullanın işe yarayacak bir **problem çözme
 alışkanlığı** kazanmaktır.
 
@@ -44,7 +44,7 @@ Ders sonunda öğrenci:
 * Karar yapıları, döngüler ve fonksiyonlarla program yazar
 * Temel arama ve sıralama algoritmalarını uygular ve karşılaştırır
 * Aynı probleme farklı algoritmalar önerip uygun olanı gerekçesiyle seçer
-* Hem blok tabanlı (Scratch) hem metin tabanlı (Python) ortamda çalışır
+* Algoritmalarını Python'da yazar ve pytest ile test eder
 
 ## 🔥 Nereden başlamalı?
 
@@ -58,13 +58,12 @@ sayfasını hafta hafta takip edin.
 
 ## 📂 Dersin düzeni
 
-Her modülde aynı problem üç biçimde ele alınır:
+Her modülde aynı problem iki biçimde ele alınır:
 
 ```mermaid
 flowchart LR
     A["Problem"] --> B["Akış şeması"]
-    B --> C["Blok tabanlı<br>(Scratch)"]
-    C --> D["Metin tabanlı<br>(Python)"]
+    B --> C["Python"]
 ```
 
 | Hafta | Modül | Konu |
@@ -104,10 +103,8 @@ _Eklenecek._
 
 ## 📓 Kaynaklar
 
-* [CS50x](https://cs50.harvard.edu/x/). Harvard'ın, Scratch ile başlayıp metin tabanlı dillere geçen
-  ücretsiz giriş dersi.
+* [CS50P](https://cs50.harvard.edu/python/). Harvard'ın Python ile programlamaya giriş dersi (ücretsiz).
 * [Think Python, 3. baskı](https://allendowney.github.io/ThinkPython/). Allen B. Downey'in ücretsiz
   çevrimiçi okunabilen Python kitabı.
 * [Python Tutor](https://pythontutor.com/). Python kodunu adım adım çalıştırıp değişkenleri görselleştirir.
-* [Scratch](https://scratch.mit.edu/). MIT'nin blok tabanlı programlama ortamı.
 * [VisuAlgo](https://visualgo.net/). Arama ve sıralama algoritmalarının animasyonları.

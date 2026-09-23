@@ -20,7 +20,7 @@ Bu modülün sonunda öğrenci:
 ## 📚 İçerik
 
 1. Girdi – İşlem – Çıktı (IPO) modeli
-2. Scratch'te sor/söyle blokları
+2. Akış şemasında giriş/çıkış sembolleri
 3. Python'da input() ve print()
 4. Temel veri tipleri
 5. Tip dönüşümü (type casting)
@@ -29,7 +29,7 @@ Bu modülün sonunda öğrenci:
 ## 🧪 Alıştırmalar
 
 Bu modülün alıştırma dosyaları `exercise_files/` klasöründedir. Her alıştırma aynı problemi
-üç biçimde ele alır: **akış şeması → blok tabanlı (Scratch) → metin tabanlı (Python)**.
+iki biçimde ele alır: **akış şeması → Python**.
 
 ## 📖 İleri okuma
 

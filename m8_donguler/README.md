@@ -20,7 +20,7 @@ Bu modülün sonunda öğrenci:
 ## 📚 İçerik
 
 1. Tekrar yapısı ve akış diyagramında döngü
-2. Scratch'te tekrarla / sürekli tekrarla blokları
+2. Döngüyü elle izleme (iz tablosu)
 3. while döngüsü
 4. for döngüsü ve range()
 5. Sayaç ve toplayıcı kalıpları
@@ -29,7 +29,7 @@ Bu modülün sonunda öğrenci:
 ## 🧪 Alıştırmalar
 
 Bu modülün alıştırma dosyaları `exercise_files/` klasöründedir. Her alıştırma aynı problemi
-üç biçimde ele alır: **akış şeması → blok tabanlı (Scratch) → metin tabanlı (Python)**.
+iki biçimde ele alır: **akış şeması → Python**.
 
 ## 📖 İleri okuma
 

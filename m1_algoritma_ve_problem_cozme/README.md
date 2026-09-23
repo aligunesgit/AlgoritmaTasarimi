@@ -11,7 +11,7 @@ Bu modülün sonunda öğrenci:
 * İyi bir algoritmanın beş temel özelliğini sıralar ve bir algoritmayı bu özelliklere göre değerlendirir
 * Derleyici ile yorumlayıcı arasındaki farkı açıklar
 * Blok tabanlı ve metin tabanlı programlama ortamlarını karşılaştırır
-* Aynı "selamlama" programını hem Scratch'te hem Python'da yazıp çalıştırır
+* Basit bir "selamlama" programının akış şemasını çizer, Python'da yazıp çalıştırır ve test eder
 
 ---
 
@@ -39,7 +39,7 @@ bir **arama** (M10) adımıdır.
 
     Algoritma, bir çözümün **fikridir**; hangi dille ifade edildiğinden bağımsızdır. Program ise o
     fikrin belirli bir programlama dilinde yazılmış, bilgisayarın çalıştırabileceği hâlidir. Aynı
-    algoritma Türkçe cümlelerle, akış şemasıyla, Scratch bloklarıyla ya da Python koduyla ifade
+    algoritma Türkçe cümlelerle, sözde kodla, akış şemasıyla ya da Python koduyla ifade
     edilebilir. Bu derste her algoritmayı bu biçimlerin birkaçıyla birden yazacağız.
 
 ## 2. Problem çözme süreci
@@ -60,7 +60,7 @@ flowchart LR
 |---|---|---|
 | **1. Problemi anla** | Girdiler neler? Çıktı ne olmalı? Hangi kısıtlar var? | Girdi/çıktı listesi (M5) |
 | **2. Plan yap** | Bu problemi daha önce gördüğüm bir probleme benzetebilir miyim? Parçalara ayırabilir miyim? | Tasarım teknikleri (M2), sözde kod, akış şeması (M3) |
-| **3. Planı uygula** | Her adımı doğru ifade ettim mi? | Scratch ve Python ile kodlama |
+| **3. Planı uygula** | Her adımı doğru ifade ettim mi? | Python ile kodlama |
 | **4. Geriye bak** | Sonuç doğru mu? Farklı girdilerle de çalışıyor mu? Daha iyi bir yol var mı? | Test yazma, algoritma karşılaştırma (M12) |
 
 Kesikli ok önemli: 4. adımda bir hata bulursanız çoğu zaman sorun koddan değil, problemin yanlış ya da
@@ -75,7 +75,7 @@ eksik anlaşılmasından kaynaklanır. Bu yüzden geri dönüş 3. adıma değil
     3. İki sayıyı topla.
     4. Toplamı 2'ye böl.
     5. Sonucu göster.
-3. **Uygula.** Aynı adımları Python'da yazarız (bkz. [§6](#6-ilk-program-scratch-ve-python-ile-selamlama)
+3. **Uygula.** Aynı adımları Python'da yazarız (bkz. [§6](#6-ilk-program)
    ve `exercise_files/ortalama.py`).
 4. **Geriye bak.** `4` ve `6` için `5` bekleriz. Peki `3` ve `4` için? Sonuç `3.5` olmalı; programımız
    tam sayı bölmesi yapıyorsa `3` verir ve bu bir hatadır. Bu tür ince noktaları M6'da operatörleri
@@ -122,7 +122,7 @@ dönüştürmesine izin veririz.
 ```mermaid
 flowchart LR
     P["Problem"] --> A["Algoritma<br>(sözde kod, akış şeması)"]
-    A --> K["Kaynak kod<br>(Python, C, Scratch...)"]
+    A --> K["Kaynak kod<br>(Python, C, Java...)"]
     K --> T["Çevirici<br>(derleyici / yorumlayıcı)"]
     T --> M["Makine kodu"]
     M --> S["Çalıştırma ve sonuç"]
@@ -136,7 +136,7 @@ flowchart LR
 | **Hata bildirimi** | Çeviri aşamasında, program çalışmadan önce. | Hatalı satıra gelindiğinde, çalışma sırasında. |
 | **Hız** | Çalışan program genellikle daha hızlıdır. | Genellikle daha yavaştır. |
 | **Deneme kolaylığı** | Her değişiklikten sonra yeniden derlemek gerekir. | Kodu yazıp hemen denemek kolaydır. |
-| **Örnek diller** | C, C++, Go, Rust | Python, JavaScript, Scratch |
+| **Örnek diller** | C, C++, Go, Rust | Python, JavaScript, Ruby |
 
 !!! note "Python için küçük bir düzeltme"
 
@@ -166,22 +166,22 @@ Profesyonel yazılımların neredeyse tamamı bu şekilde geliştirilir.
 | **Kullanım alanı** | Eğitim, hızlı prototip | Profesyonel yazılım geliştirme |
 | **Örnekler** | Scratch, Blockly, MIT App Inventor, Code.org | Python, C, Java, JavaScript |
 
-Bu iki grup birbirinin rakibi değildir; aynı fikrin iki farklı gösterimidir. Scratch'teki bir
-"`10 defa tekrarla`" bloğu ile Python'daki `for i in range(10):` satırı aynı algoritmik fikri (tekrar)
-ifade eder. Bu derste her yeni kavramı önce blokla, ardından metinle göreceğiz. Amaç, kavramı dilden
-bağımsız olarak kavramanız.
+Bu iki grup birbirinin rakibi değildir; aynı fikrin iki farklı gösterimidir. Blok tabanlı bir
+ortamdaki "`10 defa tekrarla`" bloğu ile Python'daki `for i in range(10):` satırı aynı algoritmik
+fikri (tekrar) ifade eder. Blok tabanlı ortamlar daha çok okul öncesi ve ortaokul düzeyinde kullanılır.
+Bu derste doğrudan metin tabanlı bir dil olan Python ile çalışacağız. Algoritmanın mantığını ise önce
+akış şeması ve sözde kodla, dilden bağımsız olarak kuracağız.
 
 ### Bu derste kullanacağımız ortamlar
 
 | Ortam | Tür | Nerede çalışır | Ne için kullanacağız |
 |---|---|---|---|
-| [Scratch](https://scratch.mit.edu/) | Blok tabanlı | Tarayıcıda (kurulum gerekmez) veya masaüstü uygulaması | Kavramların ilk tanıtımı |
 | [Python](https://www.python.org/) + [VS Code](https://code.visualstudio.com/) | Metin tabanlı | Bilgisayarınızda | Kavramların gerçek bir dilde uygulanması, alıştırmalar |
 | [Python Tutor](https://pythontutor.com/) | Görselleştirme | Tarayıcıda | Python kodunu adım adım izleme (M4) |
 
 Kurulum adımları [Giriş sayfasındadır](../pages/before.md#kurulum).
 
-## 6. İlk program: Scratch ve Python ile selamlama
+## 6. İlk program: selamlama { #6-ilk-program }
 
 Kullanıcıya adını soran ve onu adıyla selamlayan küçük bir program yazalım. Önce algoritmayı yazıyoruz:
 
@@ -190,26 +190,18 @@ Kullanıcıya adını soran ve onu adıyla selamlayan küçük bir program yazal
 3. "Merhaba, " ifadesini cevapla birleştir.
 4. Oluşan cümleyi göster.
 
-### 6.1 Scratch
+### 6.1 Akış şeması
 
-[scratch.mit.edu](https://scratch.mit.edu/) adresine gidip **Oluştur**'a tıklayın. Arayüz dilini sol
-üstteki dünya simgesinden **Türkçe** yapabilirsiniz. Ardından aşağıdaki blokları kod alanına sürükleyin:
+Aynı adımların akış şeması aşağıdadır. Sembollerin anlamlarını M3'te ayrıntılı işleyeceğiz. Şimdilik
+şu kadarı yeterli: oval başlangıç ve bitişi, paralelkenar giriş/çıkışı, dikdörtgen işlemi gösterir.
 
-<pre class="blocks">
-yeşil bayrak tıklandığında
-[Adın ne?] diye sor ve bekle
-([Merhaba, ] i ve (yanıt) ile birleştir) de
-</pre>
-
-| Blok | Kategori | Algoritmadaki adımı |
-|---|---|---|
-| `yeşil bayrak tıklandığında` | Olaylar | Programın başlangıcı |
-| `... diye sor ve bekle` | Algılama | Adım 1 ve 2: sor, cevabı al |
-| `yanıt` | Algılama | Kullanıcının verdiği cevap |
-| `... i ve ... ile birleştir` | Operatörler | Adım 3: iki metni birleştir |
-| `... de` | Görünüm | Adım 4: sonucu göster |
-
-Yeşil bayrağa tıklayın, adınızı yazıp Enter'a basın. Kukla sizi selamlayacaktır.
+```mermaid
+flowchart TD
+    A(["Başla"]) --> B[/"Kullanıcıdan adını al: ad"/]
+    B --> C["cümle = Merhaba, + ad"]
+    C --> D[/"cümle ekrana yaz"/]
+    D --> E(["Bitir"])
+```
 
 ### 6.2 Python
 
@@ -226,10 +218,10 @@ if __name__ == "__main__":
     print(selamla(kullanici))  # (2)!
 ```
 
-1. Adım 1 ve 2: `input()` kullanıcıya soruyu gösterir ve cevabı bir metin olarak döndürür. Scratch'teki
-   `diye sor ve bekle` + `yanıt` bloklarının karşılığıdır.
-2. Adım 3 ve 4: `selamla()` metinleri birleştirir, `print()` sonucu ekrana yazar. Scratch'teki
-   `birleştir` + `de` bloklarının karşılığıdır.
+1. Adım 1 ve 2: `input()` kullanıcıya soruyu gösterir ve cevabı bir metin olarak döndürür. Akış
+   şemasındaki ilk giriş kutusunun karşılığıdır.
+2. Adım 3 ve 4: `selamla()` metinleri birleştirir, `print()` sonucu ekrana yazar. Akış şemasındaki
+   işlem ve çıkış kutularının karşılığıdır.
 
 Çalıştırmak için repo klasöründe:
 
@@ -268,8 +260,9 @@ olduğunu gösterir. Bu, Pólya'nın 4. adımının ("geriye bak") otomatikleşt
    algoritmanızı [§3](#3-iyi-bir-algoritmanin-ozellikleri)'teki beş özelliğe göre değerlendirin.
 2. **Belirsizliği gider.** "Makarnayı pişene kadar kaynat" adımını, bir robotun uygulayabileceği kadar
    belirli hâle getirin.
-3. **Scratch selamlama.** §6.1'deki programı yazın. Sonra kuklanın selamdan sonra 2 saniye bekleyip
-   "Bugün nasılsın?" diye sormasını sağlayın. İpucu: `saniye bekle` bloğu Kontrol kategorisindedir.
+3. **Akış şemasını genişlet.** §6.1'deki akış şemasını, program selamdan sonra kullanıcıya
+   "Bugün nasılsın?" diye sorup cevabı `"Anladım, <cevap>."` biçiminde ekrana yazacak şekilde
+   genişletin. Kâğıt üzerinde çizmeniz yeterli.
 4. **Python selamlama.** `merhaba.py` dosyasını çalıştırın. Ardından `selamla` fonksiyonunu,
    `"Merhaba, Ayşe! Algoritma Tasarımı dersine hoş geldin."` çıktısını verecek şekilde değiştirin ve
    `test_merhaba.py` dosyasını yeni çıktıya göre güncelleyin.
@@ -285,13 +278,13 @@ Algoritma, bir problemi çözmek için izlenen, sırası belli, sonlu ve tek anl
 Program ise bu adımların bilgisayarın çalıştırabileceği bir dilde yazılmış hâlidir. İyi bir çözüm,
 klavyeden önce gelir: problemi anlamak, plan yapmak, uygulamak ve geriye bakmak. Programlama dilleri
 blok tabanlı ve metin tabanlı olarak iki gruba ayrılabilir, ancak ikisi de aynı algoritmik fikirleri
-ifade eder. Bu yüzden derste her kavramı önce Scratch'te, sonra Python'da göreceğiz. Bir sonraki
+ifade eder. Bu derste her kavramı önce akış şemasıyla, sonra Python'da göreceğiz. Bir sonraki
 modülde, bir problemi algoritmaya dönüştürmek için kullanabileceğimiz sistematik tekniklere geçiyoruz.
 
 ## İleri okuma
 
-* [CS50x, Hafta 0: Scratch](https://cs50.harvard.edu/x/weeks/0/). Harvard'ın giriş dersinin ilk
-  haftası. Algoritma kavramını ve Scratch'i bu modüle çok benzer bir yaklaşımla anlatır.
+* [CS50P, Hafta 0: Functions, Variables](https://cs50.harvard.edu/python/weeks/0/). Harvard'ın
+  Python ile programlamaya giriş dersinin ilk haftası. `input()`, `print()` ve ilk fonksiyonları anlatır.
 * Allen B. Downey, [*Think Python*, 3. baskı, 1. bölüm](https://allendowney.github.io/ThinkPython/chap01.html).
   Programlamanın ne olduğuna ve Python'la ilk adımlara ücretsiz bir giriş.
 
@@ -303,4 +296,3 @@ modülde, bir problemi algoritmaya dönüştürmek için kullanabileceğimiz sis
   Addison-Wesley, 1997, §1.1. §3'teki beş algoritma özelliğinin kaynağı.
 * [Python belgeleri: Glossary, "bytecode"](https://docs.python.org/3/glossary.html#term-bytecode).
   §4'teki CPython notunun kaynağı.
-* [Scratch](https://scratch.mit.edu/), MIT Media Lab. §6.1'deki blokların kaynağı.

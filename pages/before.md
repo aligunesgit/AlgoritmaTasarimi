@@ -13,7 +13,6 @@ Derste kullanılan araçların hepsi ücretsizdir.
 
 | Araç | Ne için | Platform | Gerekli mi? |
 |---|---|---|---|
-| [Scratch](https://scratch.mit.edu/) | Blok tabanlı programlama | Web (tarayıcı), Windows, macOS | Evet |
 | [Python 3.11+](https://www.python.org/downloads/) | Metin tabanlı programlama | Hepsi | Evet |
 | [uv](https://docs.astral.sh/uv/) | Python paket ve sanal ortam yöneticisi | Hepsi | Evet |
 | [VS Code](https://code.visualstudio.com/) | Kod editörü | Hepsi | Evet |

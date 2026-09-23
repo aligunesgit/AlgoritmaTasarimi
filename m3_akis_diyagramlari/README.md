@@ -29,7 +29,7 @@ Bu modülün sonunda öğrenci:
 ## 🧪 Alıştırmalar
 
 Bu modülün alıştırma dosyaları `exercise_files/` klasöründedir. Her alıştırma aynı problemi
-üç biçimde ele alır: **akış şeması → blok tabanlı (Scratch) → metin tabanlı (Python)**.
+iki biçimde ele alır: **akış şeması → Python**.
 
 ## 📖 İleri okuma
 

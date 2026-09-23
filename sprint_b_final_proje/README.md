@@ -13,7 +13,6 @@ Proje; döngüler, fonksiyonlar ve arama/sıralama algoritmalarından en az biri
 
 * Problemin tanımı, girdi/çıktı listesi ve sözde kod
 * Akış diyagramı
-* Scratch sürümü (proje linki)
 * Fonksiyonlara ayrılmış Python sürümü ve `pytest` testleri
 * En az iki farklı algoritmanın karşılaştırıldığı kısa bir rapor (M12)
 

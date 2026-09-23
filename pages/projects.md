@@ -7,9 +7,8 @@ Derste iki proje vardır: [Proje Sprinti A](../sprint_a_proje/README.md) (8. haf
 
     Grup büyüklüğü, teslim biçimi ve değerlendirme ölçütleri hazırlanıyor.
 
-## Her projede beklenen dört temsil
+## Her projede beklenen üç temsil
 
 1. Problemin tanımı ve sözde kod
 2. Akış diyagramı
-3. Scratch sürümü
-4. Python sürümü ve testleri
+3. Python sürümü ve testleri
