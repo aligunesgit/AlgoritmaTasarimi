@@ -1,0 +1,1864 @@
+
+<!doctype html>
+<html lang="tr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="2031211013 - Algoritma Tasarımı ders materyali">
+      
+      
+      
+      
+        <link rel="prev" href="../pages/before/">
+      
+      
+        <link rel="next" href="../m2_tasarim_teknikleri/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../figures/logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>💡 M1 - Algoritma ve Problem Çözme - Algoritma Tasarımı</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#m1-algoritma-ve-problem-cozme" class="md-skip">
+          Ana içeriğe geç
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Başlık">
+    <a href=".." title="Algoritma Tasarımı" class="md-header__button md-logo" aria-label="Algoritma Tasarımı" data-md-component="logo">
+      
+  <img src="../figures/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Algoritma Tasarımı
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              💡 M1 - Algoritma ve Problem Çözme
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Karanlık moda geç"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Karanlık moda geç" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Aydınlık moda geç"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Aydınlık moda geç" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Ara" placeholder="Ara" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Ara">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Temizle" aria-label="Temizle" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Arama başlatılıyor
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/aligunesgit/AlgoritmaTasarimi" title="Depoya git" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasyon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Algoritma Tasarımı" class="md-nav__button md-logo" aria-label="Algoritma Tasarımı" data-md-component="logo">
+      
+  <img src="../figures/logo.svg" alt="logo">
+
+    </a>
+    Algoritma Tasarımı
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/aligunesgit/AlgoritmaTasarimi" title="Depoya git" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ana Sayfa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/before/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giriş
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    💡 M1 - Algoritma ve Problem Çözme
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    💡 M1 - Algoritma ve Problem Çözme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ogrenme-hedefleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❔ Öğrenme hedefleri
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-algoritma-nedir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Algoritma nedir?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-problem-cozme-sureci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Problem çözme süreci
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Problem çözme süreci">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ornek-iki-saynn-ortalamas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek: iki sayının ortalaması
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-iyi-bir-algoritmanin-ozellikleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. İyi bir algoritmanın özellikleri
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-algoritmadan-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Algoritmadan programa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-blok-ve-metin-tabanl-programlama-ortamlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Blok ve metin tabanlı programlama ortamları
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Blok ve metin tabanlı programlama ortamları">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bu-derste-kullanacagmz-ortamlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bu derste kullanacağımız ortamlar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ilk-program-scratch-ve-python-ile-selamlama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. İlk program: Scratch ve Python ile selamlama
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. İlk program: Scratch ve Python ile selamlama">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-scratch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Scratch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-alstrmalar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Alıştırmalar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ozet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Özet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ileri-okuma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İleri okuma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kaynaklar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kaynaklar
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m2_tasarim_teknikleri/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧩 M2 - Algoritma Tasarlama Teknikleri
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m3_akis_diyagramlari/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔷 M3 - Akış Diyagramları
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m4_gorsellestirme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👁️ M4 - Görselleştirme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m5_giris_cikis_veri_tipleri/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⌨️ M5 - Giriş/Çıkış ve Veri Tipleri
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m6_degiskenler_operatorler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔢 M6 - Sabitler, Değişkenler, Operatörler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m7_karar_yapilari/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔀 M7 - Karar Yapıları
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint_a_proje/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚀 Proje Sprinti A
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m8_donguler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔁 M8 - Döngüler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m9_fonksiyonlar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧱 M9 - Fonksiyonlar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m10_arama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔍 M10 - Arama Algoritmaları
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m11_siralama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📶 M11 - Sıralama Algoritmaları
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../m12_uygulanabilirlik/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⚖️ M12 - Algoritmaların Uygulanabilirliği
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint_b_final_proje/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏁 Proje Sprinti B
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/timeplan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zaman Planı
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projeler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SSS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Özet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ogrenme-hedefleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❔ Öğrenme hedefleri
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-algoritma-nedir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Algoritma nedir?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-problem-cozme-sureci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Problem çözme süreci
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Problem çözme süreci">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ornek-iki-saynn-ortalamas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek: iki sayının ortalaması
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-iyi-bir-algoritmanin-ozellikleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. İyi bir algoritmanın özellikleri
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-algoritmadan-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Algoritmadan programa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-blok-ve-metin-tabanl-programlama-ortamlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Blok ve metin tabanlı programlama ortamları
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Blok ve metin tabanlı programlama ortamları">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bu-derste-kullanacagmz-ortamlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bu derste kullanacağımız ortamlar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ilk-program-scratch-ve-python-ile-selamlama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. İlk program: Scratch ve Python ile selamlama
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. İlk program: Scratch ve Python ile selamlama">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-scratch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Scratch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-alstrmalar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Alıştırmalar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ozet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Özet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ileri-okuma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İleri okuma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kaynaklar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kaynaklar
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/aligunesgit/AlgoritmaTasarimi/edit/main/m1_algoritma_ve_problem_cozme/README.md" title="Düzenle" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/aligunesgit/AlgoritmaTasarimi/raw/main/m1_algoritma_ve_problem_cozme/README.md" title="Sayfanın kaynağını görüntüle" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
+    </a>
+  
+
+
+<h1 id="m1-algoritma-ve-problem-cozme">💡 M1 - Algoritma ve Problem Çözme<a class="headerlink" href="#m1-algoritma-ve-problem-cozme" title="Permanent link">&para;</a></h1>
+<p align="center"><em>Hafta 1</em></p>
+
+<h2 id="ogrenme-hedefleri">❔ Öğrenme hedefleri<a class="headerlink" href="#ogrenme-hedefleri" title="Permanent link">&para;</a></h2>
+<p>Bu modülün sonunda öğrenci:</p>
+<ul>
+<li>Algoritmanın ne olduğunu tanımlar ve günlük hayattan algoritma örnekleri verir</li>
+<li>Problem → algoritma → program → çalıştırma zincirini açıklar</li>
+<li>İyi bir algoritmanın beş temel özelliğini sıralar ve bir algoritmayı bu özelliklere göre değerlendirir</li>
+<li>Derleyici ile yorumlayıcı arasındaki farkı açıklar</li>
+<li>Blok tabanlı ve metin tabanlı programlama ortamlarını karşılaştırır</li>
+<li>Aynı "selamlama" programını hem Scratch'te hem Python'da yazıp çalıştırır</li>
+</ul>
+<hr />
+<h2 id="1-algoritma-nedir">1. Algoritma nedir?<a class="headerlink" href="#1-algoritma-nedir" title="Permanent link">&para;</a></h2>
+<p><strong>Algoritma</strong>, bir problemi çözmek ya da bir işi yapmak için izlenen, sırası belli ve sonlu sayıda
+adımdan oluşan yol tarifidir. Kelime, 9. yüzyılda Bağdat'ta çalışan matematikçi <strong>Muhammed bin Musa
+el-Harezmî</strong>'nin adının Latince yazılışı olan <em>Algoritmi</em>'den gelir. El-Harezmî'nin hesaplama
+yöntemlerini anlatan eserleri Avrupa'ya bu isimle çevrilmiştir.</p>
+<p>Algoritma bilgisayara özgü bir kavram değildir. Her gün farkında olmadan onlarca algoritma uygularız:</p>
+<table>
+<thead>
+<tr>
+<th>Günlük iş</th>
+<th>Algoritmanın adımları (özet)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Çay demlemek</td>
+<td>Suyu kaynat → demliğe çay koy → üzerine su ekle → 15 dakika demlendir → bardağa koy</td>
+</tr>
+<tr>
+<td>Navigasyonla yol bulmak</td>
+<td>Konumunu al → hedefi al → olası yolları hesapla → en kısa olanı seç → adım adım tarif et</td>
+</tr>
+<tr>
+<td>Kütüphanede kitap bulmak</td>
+<td>Konu kodunu öğren → ilgili rafa git → kodları sırayla tara → kitabı al</td>
+</tr>
+<tr>
+<td>ATM'den para çekmek</td>
+<td>Kartı tak → şifreyi gir → şifre doğruysa tutarı gir → bakiye yeterliyse parayı ver</td>
+</tr>
+</tbody>
+</table>
+<p>Bu örneklerden ikisi dersin ilerleyen haftalarında karşımıza çıkacak iki fikri şimdiden içeriyor:
+ATM örneğindeki "şifre doğruysa" bir <strong>karar</strong> (M7), kütüphane örneğindeki "kodları sırayla tara" ise
+bir <strong>arama</strong> (M10) adımıdır.</p>
+<div class="admonition tip">
+<p class="admonition-title">Algoritma ≠ program</p>
+<p>Algoritma, bir çözümün <strong>fikridir</strong>; hangi dille ifade edildiğinden bağımsızdır. Program ise o
+fikrin belirli bir programlama dilinde yazılmış, bilgisayarın çalıştırabileceği hâlidir. Aynı
+algoritma Türkçe cümlelerle, akış şemasıyla, Scratch bloklarıyla ya da Python koduyla ifade
+edilebilir. Bu derste her algoritmayı bu biçimlerin birkaçıyla birden yazacağız.</p>
+</div>
+<h2 id="2-problem-cozme-sureci">2. Problem çözme süreci<a class="headerlink" href="#2-problem-cozme-sureci" title="Permanent link">&para;</a></h2>
+<p>Programlamaya yeni başlayanların en sık yaptığı hata, problemi anlamadan klavyeye oturmaktır. Matematikçi
+George Pólya'nın <em>How to Solve It</em> (1945) kitabında önerdiği dört adımlı yöntem, programlama için de
+geçerlidir:</p>
+<pre class="mermaid"><code>flowchart LR
+    A["1. Problemi anla"] --&gt; B["2. Plan yap&lt;br&gt;(algoritma tasarla)"]
+    B --&gt; C["3. Planı uygula&lt;br&gt;(programı yaz)"]
+    C --&gt; D["4. Geriye bak&lt;br&gt;(test et, iyileştir)"]
+    D -.-&gt;|"hata varsa"| A</code></pre>
+<table>
+<thead>
+<tr>
+<th>Adım</th>
+<th>Kendinize sorun</th>
+<th>Bu derste karşılığı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Problemi anla</strong></td>
+<td>Girdiler neler? Çıktı ne olmalı? Hangi kısıtlar var?</td>
+<td>Girdi/çıktı listesi (M5)</td>
+</tr>
+<tr>
+<td><strong>2. Plan yap</strong></td>
+<td>Bu problemi daha önce gördüğüm bir probleme benzetebilir miyim? Parçalara ayırabilir miyim?</td>
+<td>Tasarım teknikleri (M2), sözde kod, akış şeması (M3)</td>
+</tr>
+<tr>
+<td><strong>3. Planı uygula</strong></td>
+<td>Her adımı doğru ifade ettim mi?</td>
+<td>Scratch ve Python ile kodlama</td>
+</tr>
+<tr>
+<td><strong>4. Geriye bak</strong></td>
+<td>Sonuç doğru mu? Farklı girdilerle de çalışıyor mu? Daha iyi bir yol var mı?</td>
+<td>Test yazma, algoritma karşılaştırma (M12)</td>
+</tr>
+</tbody>
+</table>
+<p>Kesikli ok önemli: 4. adımda bir hata bulursanız çoğu zaman sorun koddan değil, problemin yanlış ya da
+eksik anlaşılmasından kaynaklanır. Bu yüzden geri dönüş 3. adıma değil, 1. adıma yapılır.</p>
+<h3 id="ornek-iki-saynn-ortalamas">Örnek: iki sayının ortalaması<a class="headerlink" href="#ornek-iki-saynn-ortalamas" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Anla.</strong> Girdi: iki sayı. Çıktı: bu iki sayının aritmetik ortalaması. Sayılar ondalıklı olabilir.</li>
+<li><strong>Plan yap.</strong><ol>
+<li>Birinci sayıyı al.</li>
+<li>İkinci sayıyı al.</li>
+<li>İki sayıyı topla.</li>
+<li>Toplamı 2'ye böl.</li>
+<li>Sonucu göster.</li>
+</ol>
+</li>
+<li><strong>Uygula.</strong> Aynı adımları Python'da yazarız (bkz. <a href="#6-ilk-program-scratch-ve-python-ile-selamlama">§6</a>
+   ve <code>exercise_files/ortalama.py</code>).</li>
+<li><strong>Geriye bak.</strong> <code>4</code> ve <code>6</code> için <code>5</code> bekleriz. Peki <code>3</code> ve <code>4</code> için? Sonuç <code>3.5</code> olmalı; programımız
+   tam sayı bölmesi yapıyorsa <code>3</code> verir ve bu bir hatadır. Bu tür ince noktaları M6'da operatörleri
+   işlerken ayrıntılı göreceğiz.</li>
+</ol>
+<h2 id="3-iyi-bir-algoritmanin-ozellikleri">3. İyi bir algoritmanın özellikleri<a class="headerlink" href="#3-iyi-bir-algoritmanin-ozellikleri" title="Permanent link">&para;</a></h2>
+<p>Donald Knuth, <em>The Art of Computer Programming</em> serisinin ilk cildinde bir algoritmanın taşıması gereken
+beş özelliği tanımlar:</p>
+<table>
+<thead>
+<tr>
+<th>Özellik</th>
+<th>Anlamı</th>
+<th>Olmazsa ne olur?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sonluluk</strong> (finiteness)</td>
+<td>Algoritma sonlu sayıda adımdan sonra mutlaka biter.</td>
+<td>"Çay demlenene kadar bekle" deyip demlenmeyi kontrol etmezseniz sonsuza kadar beklersiniz.</td>
+</tr>
+<tr>
+<td><strong>Belirlilik</strong> (definiteness)</td>
+<td>Her adım açık ve tek anlamlıdır.</td>
+<td>"Biraz tuz ekle" adımını iki kişi farklı yorumlar. Bilgisayar ise hiç yorumlayamaz.</td>
+</tr>
+<tr>
+<td><strong>Girdi</strong> (input)</td>
+<td>Sıfır ya da daha fazla girdi alır.</td>
+<td>Girdisi belirsiz bir algoritmayı test edemezsiniz.</td>
+</tr>
+<tr>
+<td><strong>Çıktı</strong> (output)</td>
+<td>En az bir çıktı üretir.</td>
+<td>Sonuç vermeyen bir işlem dizisi bir problemi çözmez.</td>
+</tr>
+<tr>
+<td><strong>Etkinlik</strong> (effectiveness)</td>
+<td>Her adım, kâğıt kalemle sınırlı sürede yapılabilecek kadar temeldir.</td>
+<td>"En iyi hamleyi bul" tek bir adım değildir; kendisi ayrı bir algoritma gerektirir.</td>
+</tr>
+</tbody>
+</table>
+<p>Bu beş özelliğe ek olarak pratikte iki şeye daha bakarız: <strong>doğruluk</strong> (her geçerli girdi için doğru
+sonucu veriyor mu?) ve <strong>verimlilik</strong> (bunu makul sürede ve bellekte yapıyor mu?). Verimliliği M12'de
+ayrıntılı ele alacağız.</p>
+<div class="admonition example">
+<p class="admonition-title">Kendinizi deneyin</p>
+<p>Aşağıdaki "algoritma" hangi özellikleri ihlal ediyor?</p>
+<ol>
+<li>Bir sayı düşün.</li>
+<li>Sayı büyükse küçült.</li>
+<li>
+<ol>
+<li>adıma dön.</li>
+</ol>
+</li>
+</ol>
+<details class="success">
+<summary>Cevap</summary>
+<p><strong>Belirlilik</strong> ihlal ediliyor: "büyük" ve "küçült" tanımlı değil (neye göre büyük, ne kadar
+küçült?). <strong>Sonluluk</strong> da ihlal ediliyor: bitiş koşulu olmadığı için 3. adım algoritmayı sonsuza
+kadar döndürür. Ayrıca <strong>çıktı</strong> yok: algoritma hiçbir sonuç bildirmiyor.</p>
+</details>
+</div>
+<h2 id="4-algoritmadan-programa">4. Algoritmadan programa<a class="headerlink" href="#4-algoritmadan-programa" title="Permanent link">&para;</a></h2>
+<p>Bilgisayarın işlemcisi yalnızca <strong>makine dilini</strong>, yani ikilik sistemde (0 ve 1) kodlanmış çok basit
+komutları anlar. İnsanların bu dilde program yazması son derece zordur. Bu yüzden algoritmalarımızı
+<strong>yüksek seviyeli</strong> bir programlama diliyle yazar, sonra bir çevirici programın bunu makine diline
+dönüştürmesine izin veririz.</p>
+<pre class="mermaid"><code>flowchart LR
+    P["Problem"] --&gt; A["Algoritma&lt;br&gt;(sözde kod, akış şeması)"]
+    A --&gt; K["Kaynak kod&lt;br&gt;(Python, C, Scratch...)"]
+    K --&gt; T["Çevirici&lt;br&gt;(derleyici / yorumlayıcı)"]
+    T --&gt; M["Makine kodu"]
+    M --&gt; S["Çalıştırma ve sonuç"]</code></pre>
+<p>Çevirici programlar iki temel yaklaşımla çalışır:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Derleyici (compiler)</th>
+<th>Yorumlayıcı (interpreter)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Çalışma biçimi</strong></td>
+<td>Programın tamamını önce makine koduna çevirir, sonra çalıştırılabilir bir dosya üretir.</td>
+<td>Programı satır satır okuyup o anda çalıştırır.</td>
+</tr>
+<tr>
+<td><strong>Hata bildirimi</strong></td>
+<td>Çeviri aşamasında, program çalışmadan önce.</td>
+<td>Hatalı satıra gelindiğinde, çalışma sırasında.</td>
+</tr>
+<tr>
+<td><strong>Hız</strong></td>
+<td>Çalışan program genellikle daha hızlıdır.</td>
+<td>Genellikle daha yavaştır.</td>
+</tr>
+<tr>
+<td><strong>Deneme kolaylığı</strong></td>
+<td>Her değişiklikten sonra yeniden derlemek gerekir.</td>
+<td>Kodu yazıp hemen denemek kolaydır.</td>
+</tr>
+<tr>
+<td><strong>Örnek diller</strong></td>
+<td>C, C++, Go, Rust</td>
+<td>Python, JavaScript, Scratch</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Python için küçük bir düzeltme</p>
+<p>Python'u "yorumlanan dil" olarak sınıflandırırız. Teknik olarak standart Python yorumlayıcısı
+(CPython), kodu önce <em>bytecode</em> adı verilen bir ara koda çevirir ve bu ara kodu yorumlar. Bu
+derste bu ayrıntı önemli değildir. Bilmeniz gereken şu: Python'da yazdığınız kodu ayrı bir derleme
+adımı olmadan hemen çalıştırabilirsiniz.</p>
+</div>
+<h2 id="5-blok-ve-metin-tabanl-programlama-ortamlar">5. Blok ve metin tabanlı programlama ortamları<a class="headerlink" href="#5-blok-ve-metin-tabanl-programlama-ortamlar" title="Permanent link">&para;</a></h2>
+<p>Programlama ortamlarını, kodun nasıl yazıldığına göre iki gruba ayırabiliriz.</p>
+<p><strong>Blok tabanlı</strong> ortamlarda komutlar yapboz parçalarına benzeyen bloklardır. Blokları sürükleyip
+birbirine takarak program oluşturursunuz. Bloklar yalnızca anlamlı biçimde birbirine takılabildiği
+için söz dizimi hatası (noktalı virgül unutmak, parantezi kapatmamak gibi) yapmak neredeyse imkânsızdır.
+Böylece bütün dikkatinizi algoritmanın mantığına verebilirsiniz.</p>
+<p><strong>Metin tabanlı</strong> ortamlarda program, belirli söz dizimi kurallarına uyan bir metin olarak yazılır.
+Profesyonel yazılımların neredeyse tamamı bu şekilde geliştirilir.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Blok tabanlı</th>
+<th>Metin tabanlı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Kod yazımı</strong></td>
+<td>Blokları sürükle-bırak</td>
+<td>Klavyeyle yazma</td>
+</tr>
+<tr>
+<td><strong>Söz dizimi hatası</strong></td>
+<td>Neredeyse yok</td>
+<td>Sık (özellikle başlangıçta)</td>
+</tr>
+<tr>
+<td><strong>Öğrenme eğrisi</strong></td>
+<td>Çok hızlı başlangıç</td>
+<td>Daha yavaş başlangıç</td>
+</tr>
+<tr>
+<td><strong>Büyük programlar</strong></td>
+<td>Hızla karmaşıklaşır, yönetmesi zorlaşır</td>
+<td>Dosyalara, modüllere ve fonksiyonlara bölünerek yönetilir</td>
+</tr>
+<tr>
+<td><strong>Kullanım alanı</strong></td>
+<td>Eğitim, hızlı prototip</td>
+<td>Profesyonel yazılım geliştirme</td>
+</tr>
+<tr>
+<td><strong>Örnekler</strong></td>
+<td>Scratch, Blockly, MIT App Inventor, Code.org</td>
+<td>Python, C, Java, JavaScript</td>
+</tr>
+</tbody>
+</table>
+<p>Bu iki grup birbirinin rakibi değildir; aynı fikrin iki farklı gösterimidir. Scratch'teki bir
+"<code>10 defa tekrarla</code>" bloğu ile Python'daki <code>for i in range(10):</code> satırı aynı algoritmik fikri (tekrar)
+ifade eder. Bu derste her yeni kavramı önce blokla, ardından metinle göreceğiz. Amaç, kavramı dilden
+bağımsız olarak kavramanız.</p>
+<h3 id="bu-derste-kullanacagmz-ortamlar">Bu derste kullanacağımız ortamlar<a class="headerlink" href="#bu-derste-kullanacagmz-ortamlar" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Ortam</th>
+<th>Tür</th>
+<th>Nerede çalışır</th>
+<th>Ne için kullanacağız</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://scratch.mit.edu/">Scratch</a></td>
+<td>Blok tabanlı</td>
+<td>Tarayıcıda (kurulum gerekmez) veya masaüstü uygulaması</td>
+<td>Kavramların ilk tanıtımı</td>
+</tr>
+<tr>
+<td><a href="https://www.python.org/">Python</a> + <a href="https://code.visualstudio.com/">VS Code</a></td>
+<td>Metin tabanlı</td>
+<td>Bilgisayarınızda</td>
+<td>Kavramların gerçek bir dilde uygulanması, alıştırmalar</td>
+</tr>
+<tr>
+<td><a href="https://pythontutor.com/">Python Tutor</a></td>
+<td>Görselleştirme</td>
+<td>Tarayıcıda</td>
+<td>Python kodunu adım adım izleme (M4)</td>
+</tr>
+</tbody>
+</table>
+<p>Kurulum adımları <a href="../pages/before/#kurulum">Giriş sayfasındadır</a>.</p>
+<h2 id="6-ilk-program-scratch-ve-python-ile-selamlama">6. İlk program: Scratch ve Python ile selamlama<a class="headerlink" href="#6-ilk-program-scratch-ve-python-ile-selamlama" title="Permanent link">&para;</a></h2>
+<p>Kullanıcıya adını soran ve onu adıyla selamlayan küçük bir program yazalım. Önce algoritmayı yazıyoruz:</p>
+<ol>
+<li>Kullanıcıya adını sor.</li>
+<li>Verilen cevabı al.</li>
+<li>"Merhaba, " ifadesini cevapla birleştir.</li>
+<li>Oluşan cümleyi göster.</li>
+</ol>
+<h3 id="61-scratch">6.1 Scratch<a class="headerlink" href="#61-scratch" title="Permanent link">&para;</a></h3>
+<p><a href="https://scratch.mit.edu/">scratch.mit.edu</a> adresine gidip <strong>Oluştur</strong>'a tıklayın. Arayüz dilini sol
+üstteki dünya simgesinden <strong>Türkçe</strong> yapabilirsiniz. Ardından aşağıdaki blokları kod alanına sürükleyin:</p>
+<pre class="blocks">
+yeşil bayrak tıklandığında
+[Adın ne?] diye sor ve bekle
+([Merhaba, ] i ve (yanıt) ile birleştir) de
+</pre>
+
+<table>
+<thead>
+<tr>
+<th>Blok</th>
+<th>Kategori</th>
+<th>Algoritmadaki adımı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>yeşil bayrak tıklandığında</code></td>
+<td>Olaylar</td>
+<td>Programın başlangıcı</td>
+</tr>
+<tr>
+<td><code>... diye sor ve bekle</code></td>
+<td>Algılama</td>
+<td>Adım 1 ve 2: sor, cevabı al</td>
+</tr>
+<tr>
+<td><code>yanıt</code></td>
+<td>Algılama</td>
+<td>Kullanıcının verdiği cevap</td>
+</tr>
+<tr>
+<td><code>... i ve ... ile birleştir</code></td>
+<td>Operatörler</td>
+<td>Adım 3: iki metni birleştir</td>
+</tr>
+<tr>
+<td><code>... de</code></td>
+<td>Görünüm</td>
+<td>Adım 4: sonucu göster</td>
+</tr>
+</tbody>
+</table>
+<p>Yeşil bayrağa tıklayın, adınızı yazıp Enter'a basın. Kukla sizi selamlayacaktır.</p>
+<h3 id="62-python">6.2 Python<a class="headerlink" href="#62-python" title="Permanent link">&para;</a></h3>
+<p>Aynı algoritma Python'da şöyle yazılır (<code>exercise_files/merhaba.py</code>):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">selamla</span><span class="p">(</span><span class="n">ad</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="sd">"""Verilen ada göre bir selam cümlesi döndürür."""</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">"Merhaba, </span><span class="si">{</span><span class="n">ad</span><span class="si">}</span><span class="s2">!"</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">kullanici</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Adınız nedir? "</span><span class="p">)</span>  <span class="c1"># (1)!</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">selamla</span><span class="p">(</span><span class="n">kullanici</span><span class="p">))</span>  <span class="c1"># (2)!</span>
+</span></code></pre></div>
+<ol>
+<li>Adım 1 ve 2: <code>input()</code> kullanıcıya soruyu gösterir ve cevabı bir metin olarak döndürür. Scratch'teki
+   <code>diye sor ve bekle</code> + <code>yanıt</code> bloklarının karşılığıdır.</li>
+<li>Adım 3 ve 4: <code>selamla()</code> metinleri birleştirir, <code>print()</code> sonucu ekrana yazar. Scratch'teki
+   <code>birleştir</code> + <code>de</code> bloklarının karşılığıdır.</li>
+</ol>
+<p>Çalıştırmak için repo klasöründe:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>m1_algoritma_ve_problem_cozme/exercise_files/merhaba.py
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Adınız nedir? Ayşe
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Merhaba, Ayşe!
+</span></code></pre></div>
+<p>Selamlama işini ayrı bir <code>selamla</code> fonksiyonuna koymamızın nedeni, programı <strong>test edilebilir</strong>
+kılmaktır. <code>test_merhaba.py</code> dosyası bu fonksiyonu otomatik olarak dener:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">merhaba</span><span class="w"> </span><span class="kn">import</span> <span class="n">selamla</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_selamla</span><span class="p">():</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="k">assert</span> <span class="n">selamla</span><span class="p">(</span><span class="s2">"Ayşe"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"Merhaba, Ayşe!"</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </span>m1_algoritma_ve_problem_cozme
+</span></code></pre></div>
+<p>Fonksiyonları M9'da, testleri de dönem boyunca ayrıntılı işleyeceğiz. Şimdilik şunu bilmeniz yeterli:
+<code>assert</code> satırı "bu ifade doğru olmalı" der. Doğru değilse test başarısız olur ve size nerede hata
+olduğunu gösterir. Bu, Pólya'nın 4. adımının ("geriye bak") otomatikleştirilmiş hâlidir.</p>
+<h2 id="7-alstrmalar">7. Alıştırmalar<a class="headerlink" href="#7-alstrmalar" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Günlük algoritma.</strong> Sabah uyandığınızdan evden çıkana kadar yaptıklarınızı en az 8 adımlık bir
+   algoritma olarak yazın. İçinde en az bir karar ("eğer yağmur yağıyorsa...") bulunsun. Sonra
+   algoritmanızı <a href="#3-iyi-bir-algoritmanin-ozellikleri">§3</a>'teki beş özelliğe göre değerlendirin.</li>
+<li><strong>Belirsizliği gider.</strong> "Makarnayı pişene kadar kaynat" adımını, bir robotun uygulayabileceği kadar
+   belirli hâle getirin.</li>
+<li><strong>Scratch selamlama.</strong> §6.1'deki programı yazın. Sonra kuklanın selamdan sonra 2 saniye bekleyip
+   "Bugün nasılsın?" diye sormasını sağlayın. İpucu: <code>saniye bekle</code> bloğu Kontrol kategorisindedir.</li>
+<li><strong>Python selamlama.</strong> <code>merhaba.py</code> dosyasını çalıştırın. Ardından <code>selamla</code> fonksiyonunu,
+   <code>"Merhaba, Ayşe! Algoritma Tasarımı dersine hoş geldin."</code> çıktısını verecek şekilde değiştirin ve
+   <code>test_merhaba.py</code> dosyasını yeni çıktıya göre güncelleyin.</li>
+<li><strong>Ortalama.</strong> <code>exercise_files/ortalama.py</code> dosyasını inceleyin ve §2'deki dört adımın her birinin
+   kodda nereye karşılık geldiğini bulun. <code>uv run pytest m1_algoritma_ve_problem_cozme</code> ile testlerin
+   geçtiğini doğrulayın.</li>
+</ol>
+<hr />
+<h2 id="ozet">Özet<a class="headerlink" href="#ozet" title="Permanent link">&para;</a></h2>
+<p>Algoritma, bir problemi çözmek için izlenen, sırası belli, sonlu ve tek anlamlı adımlar dizisidir.
+Program ise bu adımların bilgisayarın çalıştırabileceği bir dilde yazılmış hâlidir. İyi bir çözüm,
+klavyeden önce gelir: problemi anlamak, plan yapmak, uygulamak ve geriye bakmak. Programlama dilleri
+blok tabanlı ve metin tabanlı olarak iki gruba ayrılabilir, ancak ikisi de aynı algoritmik fikirleri
+ifade eder. Bu yüzden derste her kavramı önce Scratch'te, sonra Python'da göreceğiz. Bir sonraki
+modülde, bir problemi algoritmaya dönüştürmek için kullanabileceğimiz sistematik tekniklere geçiyoruz.</p>
+<h2 id="ileri-okuma">İleri okuma<a class="headerlink" href="#ileri-okuma" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://cs50.harvard.edu/x/weeks/0/">CS50x, Hafta 0: Scratch</a>. Harvard'ın giriş dersinin ilk
+  haftası. Algoritma kavramını ve Scratch'i bu modüle çok benzer bir yaklaşımla anlatır.</li>
+<li>Allen B. Downey, <a href="https://allendowney.github.io/ThinkPython/chap01.html"><em>Think Python</em>, 3. baskı, 1. bölüm</a>.
+  Programlamanın ne olduğuna ve Python'la ilk adımlara ücretsiz bir giriş.</li>
+</ul>
+<h2 id="kaynaklar">Kaynaklar<a class="headerlink" href="#kaynaklar" title="Permanent link">&para;</a></h2>
+<ul>
+<li>George Pólya, <em>How to Solve It: A New Aspect of Mathematical Method</em>, Princeton University Press,</li>
+<li>§2'deki dört adımlı problem çözme yönteminin kaynağı.</li>
+<li>Donald E. Knuth, <em>The Art of Computer Programming, Vol. 1: Fundamental Algorithms</em>, 3. baskı,
+  Addison-Wesley, 1997, §1.1. §3'teki beş algoritma özelliğinin kaynağı.</li>
+<li><a href="https://docs.python.org/3/glossary.html#term-bytecode">Python belgeleri: Glossary, "bytecode"</a>.
+  §4'teki CPython notunun kaynağı.</li>
+<li><a href="https://scratch.mit.edu/">Scratch</a>, MIT Media Lab. §6.1'deki blokların kaynağı.</li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Son Güncelleme">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="23 Eylül 2026 22:13:12">23 Eylül 2026</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Oluşturuldu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="23 Eylül 2026 22:13:12">23 Eylül 2026</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Altbilgi" >
+        
+          
+          <a href="../pages/before/" class="md-footer__link md-footer__link--prev" aria-label="Önceki: Giriş">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Önceki
+              </span>
+              <div class="md-ellipsis">
+                Giriş
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../m2_tasarim_teknikleri/" class="md-footer__link md-footer__link--next" aria-label="Sonraki: 🧩 M2 - Algoritma Tasarlama Teknikleri">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Sonraki
+              </span>
+              <div class="md-ellipsis">
+                🧩 M2 - Algoritma Tasarlama Teknikleri
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.indexes", "navigation.footer", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view", "content.tabs.link", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Kopyaland\u0131", "clipboard.copy": "Kopyala", "search.result.more.one": "Bu sayfada 1 tane daha", "search.result.more.other": "Bu sayfada # tane daha", "search.result.none": "E\u015fle\u015fen dok\u00fcman bulunamad\u0131", "search.result.one": "1 dok\u00fcman bulundu", "search.result.other": "# dok\u00fcman bulundu", "search.result.placeholder": "Aramaya ba\u015flamak i\u00e7in yaz\u0131n", "search.result.term.missing": "Eksik", "select.version": "Versiyon se\u00e7"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.7.1/build/scratchblocks.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.7.1/build/translations-all.js"></script>
+      
+        <script src="../javascripts/scratchblocks-init.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
