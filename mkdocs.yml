@@ -1,0 +1,110 @@
+site_name: Algoritma Tasarımı
+site_description: 2031211013 - Algoritma Tasarımı ders materyali
+docs_dir: .
+site_dir: ../site
+repo_url: https://github.com/aligunesgit/AlgoritmaTasarimi
+edit_uri: edit/main/
+copyright: Copyright &copy; 2026
+
+theme:
+  language: tr
+  name: material
+  logo: figures/logo.svg
+  favicon: figures/logo.svg
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  palette:
+    - scheme: default
+      primary: teal
+      toggle:
+        icon: material/brightness-7
+        name: Karanlık moda geç
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Aydınlık moda geç
+  features:
+    - navigation.instant
+    - navigation.indexes
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang:
+        - tr
+        - en
+  - exclude:
+      glob:
+        - .venv/**
+        - site/**
+        - .pytest_cache/**
+  - glightbox
+  - same-dir
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+      locale: tr
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/scratchblocks@3.7.1/build/scratchblocks.min.js
+  - https://cdn.jsdelivr.net/npm/scratchblocks@3.7.1/build/translations-all.js
+  - javascripts/scratchblocks-init.js
+
+nav:
+  - Ana Sayfa: README.md
+  - Giriş: pages/before.md
+  - 💡 M1 - Algoritma ve Problem Çözme: m1_algoritma_ve_problem_cozme/README.md
+  - 🧩 M2 - Algoritma Tasarlama Teknikleri: m2_tasarim_teknikleri/README.md
+  - 🔷 M3 - Akış Diyagramları: m3_akis_diyagramlari/README.md
+  - 👁️ M4 - Görselleştirme: m4_gorsellestirme/README.md
+  - ⌨️ M5 - Giriş/Çıkış ve Veri Tipleri: m5_giris_cikis_veri_tipleri/README.md
+  - 🔢 M6 - Sabitler, Değişkenler, Operatörler: m6_degiskenler_operatorler/README.md
+  - 🔀 M7 - Karar Yapıları: m7_karar_yapilari/README.md
+  - 🚀 Proje Sprinti A: sprint_a_proje/README.md
+  - 🔁 M8 - Döngüler: m8_donguler/README.md
+  - 🧱 M9 - Fonksiyonlar: m9_fonksiyonlar/README.md
+  - 🔍 M10 - Arama Algoritmaları: m10_arama/README.md
+  - 📶 M11 - Sıralama Algoritmaları: m11_siralama/README.md
+  - ⚖️ M12 - Algoritmaların Uygulanabilirliği: m12_uygulanabilirlik/README.md
+  - 🏁 Proje Sprinti B: sprint_b_final_proje/README.md
+  - Zaman Planı: pages/timeplan.md
+  - Projeler: pages/projects.md
+  - SSS: pages/faq.md
+  - Özet: pages/overview.md
